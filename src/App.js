@@ -1,24 +1,45 @@
 import React from 'react';
-import Navbar from './components/Navbar'
-import Littlegems from './components/LittleGems'
-import Listivity from './components/Listivity'
-import './App.css';
+import {Switch, 
+  Link, 
+  Route,
+  BrowserRouter as Router}
+  from 'react-router-dom'
+import Homepage from './pages/Homepage'
+import AboutMe from './pages/AboutMe'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-              <Littlegems />
-          </div>
-          <div className="col-md-6">
-              <Listivity />
-          </div>
+      <Router>
+        <div>
+          <nav>
+            <Link to="/">Homepage</Link>
+            <Link to="/aboutme">About Me</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+          <Switch>
+
+            <Route exact path='/'>
+              <Homepage />
+            </Route>
+
+            <Route exact path='/aboutme'>
+              <AboutMe />
+            </Route>
+
+            <Route exact path='/portfolio'>
+              <Portfolio />
+            </Route>
+
+            <Route exact path='/contact'>
+              <Contact />
+            </Route>
+
+          </Switch>
         </div>
-      </div>
-    </>
+      </Router>
   )
 }
 
