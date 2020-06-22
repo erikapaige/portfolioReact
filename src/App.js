@@ -1,24 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react'
 import {Switch, 
   Link, 
   Route,
   BrowserRouter as Router}
   from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 import Homepage from './pages/Homepage'
 import AboutMe from './pages/AboutMe'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import {
+  Collapse, 
+  Navbar, 
+  NavbarToggler, 
+  NavbarBrand, 
+  Nav, 
+  NavItem, 
+  NavLink
+} from 'reactstrap'
 
 const App = () => {
+
+  const [collapsed, setCollapsed] = useState(true)
+
+  const toggleNavbar = () => setCollapsed(!collapsed)
+
+
   return (
       <Router>
         <div>
-          <nav>
-            <Link to="/">Homepage</Link>
-            <Link to="/aboutme">About Me</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/contact">Contact</Link>
-          </nav>
+        <Navbar color="faded" light>
+          <NavbarBrand href="/" className="mr-auto">ERIKA PAIGE HANDLEY</NavbarBrand>
+          <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/aboutme">About Me</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/portfolio">Portfolio</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contact">Contact</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
           <Switch>
 
             <Route exact path='/'>
@@ -43,4 +71,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
