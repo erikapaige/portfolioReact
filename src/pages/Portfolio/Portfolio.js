@@ -1,5 +1,8 @@
+// bring in react
 import React from 'react'
+// bring in component to render
 import PortfolioCard from '../../components/PortfolioCard'
+// bring in elements from react
 import { 
   Container,
   Row,
@@ -7,7 +10,6 @@ import {
 } from 'reactstrap'
 
 // array with portfolio projects
-
 const portfolioList = [
   {
     idCol1: 1,
@@ -18,7 +20,7 @@ const portfolioList = [
     repoText: 'View Repo',
     text: 'An application that helps users search for local restaurants that have high ratings with little reviews.',
     tech: 'Built with: Api Zomato, GoogleMaps Api, Materialize as well as Javascript, CSS and HTML.',
-    img: require('../../assets/imgs/fitness-tracker.png'),
+    img: require('../../assets/imgs/fitnessTracker.png'),
     imgText: 'image of homepage'
   },
   {
@@ -30,7 +32,7 @@ const portfolioList = [
     repoText: 'View Repo',
     text: 'Allows users to create, save and delete activities.',
     tech: 'Built Using: Api Zomato, GoogleMaps Api, Materialize as well as Javascript, CSS and HTML.',
-    img: require('../../assets/imgs/project2-listivity.png'),
+    img: require('../../assets/imgs/project2Listivity.png'),
     imgText: 'image of homepage'
   },
   {
@@ -42,7 +44,7 @@ const portfolioList = [
     repoText: 'View Repo',
     text: 'An interactive note taker application that allows users to write, save and delete notes.',
     tech: 'Built Using: Javascript, Node.js, NPM Express, FS, HTML and Bootstrap.',
-    img: require('../../assets/imgs/note-taker.png'),
+    img: require('../../assets/imgs/noteTaker.png'),
     imgText: 'image of homepage'
   },
   {
@@ -54,7 +56,7 @@ const portfolioList = [
     repoText: 'View Repo',
     text: 'An interactive note taker application that allows users to write, save and delete notes.',
     tech: 'Built Using: Mongo database with a Mongoose schema and Express to handle routes.',
-    img: require('../../assets/imgs/fitness-tracker.png'),
+    img: require('../../assets/imgs/fitnessTracker.png'),
     imgText: 'image of homepage'
   }
 ]

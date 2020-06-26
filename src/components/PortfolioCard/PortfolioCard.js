@@ -7,18 +7,19 @@ import {
   CardHeader, 
   CardLink,
   CardBody,
-  CardText
+  CardText,
+  CardTitle
 } from 'reactstrap'
 
 // passing props from Portfolio
 const PortfolioCard = (props) => {
   return (
         <Card style={{ width: '18rem' }}>
-          <CardHeader><h5>{props.title}</h5></CardHeader>
           <CardBody>
             <img width="100%" src={props.img} alt={props.imgText} />
           </CardBody>
           <CardBody>
+            <CardTitle>{props.title}</CardTitle>
             <CardText>{props.text}</CardText>
             <CardText>{props.tech}</CardText>
             <CardLink href={props.link}>{props.linkText}</CardLink>
