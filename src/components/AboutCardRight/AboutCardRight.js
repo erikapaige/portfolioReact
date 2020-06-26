@@ -2,7 +2,7 @@
 import React from 'react'
 // bring in stylesheet
 import './AboutCardRight.css'
-// import image
+// bring in media image
 import AboutMeImg from '../../assets/imgs/aboutMe.jpg'
 // bring in reactstrap elements
 import {
