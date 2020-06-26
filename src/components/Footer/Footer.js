@@ -1,7 +1,10 @@
 // bring in react
 import React, { Component } from 'react'
-// bring in stylesheet
-// import './Footer.css'
+// bring in react-dom needed for social-icons 
+import ReactDOM from 'react-dom'
+// bring in social icon package
+import { SocialIcon } from 'react-social-icons'
+
 import {
   Navbar, 
   Container,
@@ -9,6 +12,7 @@ import {
 } from 'reactstrap'
 
 var style = {
+  color: "#FCFCF7",
   backgroundColor: "#1A1406",
   borderTop: "1px solid #E7E7E7",
   textAlign: "center",
@@ -28,13 +32,17 @@ var phantom = {
 }
 
 const Footer = ({ children }) => {
-  console.log(children)
+  // console.log(children)
 
   return (
     <div>
       <div style={phantom} />
       <div style={style}>
         {/* {children} */}
+        {/* ReactDOM.render(<SocialIcon url="http://twitter.com/erikapaigestyle" />, document.body)
+        ReactDOM.render(<SocialIcon url="https://www.linkedin.com/in/ephandley/" />, document.body)
+        ReactDOM.render(<SocialIcon url="https://www.instagram.com/erikapaigestyle/" />, document.body) */}
+        <p>E.P.HANDLEY || Orange County, CA</p>
       </div>
     </div>
   )
