@@ -1,15 +1,5 @@
 // bring in react
-import React, { Component } from 'react'
-// bring in react-dom needed for social-icons 
-import ReactDOM from 'react-dom'
-// bring in social icon package
-import { SocialIcon } from 'react-social-icons'
-
-import {
-  Navbar, 
-  Container,
-  NavbarBrand
-} from 'reactstrap'
+import React from 'react'
 
 var style = {
   color: "#FCFCF7",
