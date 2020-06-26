@@ -58,6 +58,18 @@ const portfolioList = [
     tech: 'Built Using: Mongo database with a Mongoose schema and Express to handle routes.',
     img: require('../../assets/imgs/fitnessTracker.png'),
     imgText: 'image of homepage'
+  },
+  {
+    idCol2: 2,
+    title: 'Budget Tracker',
+    link: 'https://nameless-mesa-29263.herokuapp.com/',
+    linkText: 'View App',
+    repo: 'https://github.com/erikapaige/progressiveBudget',
+    repoText: 'View Repo',
+    text: 'Budget Tracker allows users to track withdrawals and deposits. The application works with and without an internet or cellular data, so users can always have their most up to date balance.',
+    tech: 'Built Using: Mongo database with a Mongoose schema and Express to handle routes.',
+    img: require('../../assets/imgs/budgetTracker.png'),
+    imgText: 'image of homepage'
   }
 ]
 
