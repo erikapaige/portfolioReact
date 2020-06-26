@@ -1,15 +1,20 @@
+// bring react router and useState
 import React, { useState } from 'react'
+// bring in react router
 import {Switch, 
-  Link, 
   Route,
   BrowserRouter as Router}
   from 'react-router-dom'
+// bring in bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
+// bring in css for page
 import './App.css'
+// importing pages
 import Homepage from './pages/Homepage'
 import AboutMe from './pages/AboutMe'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+// importing elements from reactstrap
 import {
   Collapse, 
   Navbar, 
@@ -20,12 +25,12 @@ import {
   NavLink
 } from 'reactstrap'
 
+
 const App = () => {
 
   const [collapsed, setCollapsed] = useState(true)
 
   const toggleNavbar = () => setCollapsed(!collapsed)
-
 
   return (
       <Router>
@@ -59,6 +64,7 @@ const App = () => {
 
             <Route exact path='/portfolio'>
               <Portfolio />
+        
             </Route>
 
             <Route exact path='/contact'>
