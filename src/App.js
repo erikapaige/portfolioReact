@@ -9,6 +9,8 @@ import {Switch,
 import 'bootstrap/dist/css/bootstrap.min.css'
 // bring in css for page
 import './App.css'
+// import components
+import Footer from './components/Footer'
 // importing pages
 import Homepage from './pages/Homepage'
 import AboutMe from './pages/AboutMe'
@@ -72,6 +74,7 @@ const App = () => {
             </Route>
 
           </Switch>
+          <Footer />
         </div>
       </Router>
   )
