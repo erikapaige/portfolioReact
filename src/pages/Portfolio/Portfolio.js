@@ -20,7 +20,7 @@ const portfolioList = [
     repoText: 'View Repo',
     text: 'An application that helps users search for local restaurants that have high ratings with little reviews.',
     tech: 'Built with: Api Zomato, GoogleMaps Api, Materialize as well as Javascript, CSS and HTML.',
-    img: require('../../assets/imgs/fitnessTracker.png'),
+    img: require('../../assets/imgs/projectOne.png'),
     imgText: 'image of homepage'
   },
   {
