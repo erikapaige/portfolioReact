@@ -1,8 +1,13 @@
 import React from 'react'
+import ContactForm from '../../components/ContactForm'
+import { Container } from 'reactstrap'
 
 const Contact = () => {
   return (
-    <h1>Contact Me</h1>
+    <Container fluid>
+      <ContactForm />
+    </Container>
   )
 }
+
 export default Contact
